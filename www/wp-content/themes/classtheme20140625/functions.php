@@ -132,22 +132,4 @@ function get_first_category_ID() {
 	return $category[0]->cat_ID;
 }
 
-
-// Register Custom Navigation Walker
-require_once('wp_bootstrap_navwalker.php');
-
-
-
-//Build a Bootstrap WordPress Responsive Menu
-function mytheme_setup() {
-
-	register_nav_menus( array(
-    'primary' => __( 'Primary Menu', 'classtheme20140625' ),
-    
-) );
-
-}
-add_action( 'after_setup_theme', 'mytheme_setup' );
-
-
 ?>
